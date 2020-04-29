@@ -1,2 +1,2 @@
-# algorithm_challenge
-Algorithm Challenge from LeetCode
+# Algorithm Challenge
+Just a way for me to jog my brain.
