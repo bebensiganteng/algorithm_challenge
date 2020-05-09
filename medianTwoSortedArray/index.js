@@ -21,6 +21,38 @@ var findMedianSortedArrays = function(nums1, nums2) {
 
 };
 
+var findMedianSortedArrays1 = function(nums1, nums2) {
+
+
+  const total = nums1.length + nums2.length;
+  let mid = total/2 | 0;
+
+  let i = nums1.length;
+  let j = 0;
+
+  console.log(mid);
+
+  while(i >= 0 | j < nums2.length - 1) {
+
+    let a = 0;
+    let b = 0;
+
+    if(nums1[i]) {
+      a = Math.max(a)nums1[i];
+    }
+
+    if(nums2[j]) {
+      b = nums2[j];
+    }
+
+    console.log(Math.max(a));
+
+    i--;
+    j++;
+  }
+
+}
+
 
 
 // const input1 = [1, 3];
