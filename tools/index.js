@@ -3,6 +3,28 @@ const ListNode = function(val) {
    this.next = null;
 }
 
+const BinaryTree = function(val) {
+  this.value = val;
+  this.left = null;
+  this.right = null;
+}
+
+const createTree = function(b, lc, rc) {
+
+  b.value = Math.random() * 100 | 0;
+
+  if(lc > 0) {
+    b.left = new BinaryTree();
+    createTree(b.left, --lc, rc);
+  }
+
+  if(rc > 0) {
+    b.right = new BinaryTree();
+    createTree(b.right, lc, --rc);
+  }
+
+}
+
 const add = (arr) => {
 
   let l = null, tmp = null;
@@ -102,6 +124,8 @@ const addL = (arr) => {
 // export {ListNode,add,check}
 module.exports = {
   ListNode,
+  BinaryTree,
+  createTree,
   add,
   check
 };
