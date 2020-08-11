@@ -11,7 +11,7 @@ const BinaryTree = function(val) {
 
 const createTree = function(b, lc, rc) {
 
-  b.value = Math.random() * 100 | 0;
+  b.value = Math.random() * 10 | 0;
 
   if(lc > 0) {
     b.left = new BinaryTree();
